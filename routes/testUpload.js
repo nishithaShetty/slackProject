@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Slack = require('node-slack-upload');
-//var slack = new Slack("xoxb-1427016874099-1429981202803-edO3xPizV846tIiYFdXsw7sq");
+//var slack = new Slack("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 var fs = require('fs');
 var path = require('path');
 var request = require('request');
@@ -17,7 +17,7 @@ console.log(typeof count.name);
   request.post({
       url: 'https://slack.com/api/files.upload',
       formData: {
-          token: 'xoxb-1427016874099-1429981202803-edO3xPizV846tIiYFdXsw7sq',
+          token: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
           title: "Image",
           filename: "background.jpg",
           filetype: "auto",
